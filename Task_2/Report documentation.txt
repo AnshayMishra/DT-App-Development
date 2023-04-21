@@ -1,0 +1,30 @@
+Download Android Studio
+1. Open any web browser and navigate to the Android Studio download page.
+2. This is the Android Developers website, where you can download Android    Studio. This page automatically detects your operating system.
+
+3. Click Download Android Studio. The Terms and Conditions page with the 4. Android Studio License Agreement opens.
+5. Read the License Agreement.
+6. At the bottom of the page, if you agree with the terms and conditions, select the I have read and agree with the above terms and conditions checkbox.
+7. Click Download Android Studio to start the download.
+8. When prompted, save the file to a location where you can easily locate it,    such as the Downloads folder.
+   Wait for the download to complete.
+
+
+Install Android Studio on Windows
+1. Open the folder where you downloaded and saved the Android Studio    installation file.
+2. Double-click the downloaded file.
+3. If you see a User Account Control dialog about allowing the installation    to make changes to your computer, click Yes to confirm the installation.
+
+4. The Welcome to Android Studio Setup dialog displays.
+
+5. Click Next to start the installation.
+6. Accept the default installation settings for all steps.
+7. Click Finish when the installation is done to launch Android Studio.
+
+8. Choose your preference of light or dark theme when Android Studio first launches. Screenshots in this course use the light theme, but choose whichever one you prefer.
+
+9. You may also receive a Windows Security Alert about adb.exe. Click Allow Access, if needed, to continue the installation.
+
+10. When the download and installation completes, click Finish.
+    
+The Welcome to Android Studio window displays and you're ready to start     creating apps!
