@@ -1,0 +1,760 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+
+    <RelativeLayout
+        android:id="@+id/toolBar"
+        android:layout_width="1440px"
+        android:layout_height="90px"
+        android:layout_alignParentTop="true">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:srcCompat="@drawable/toolbar" />
+    </RelativeLayout>
+
+    <androidx.cardview.widget.CardView
+            android:id="@+id/Card1"
+            android:layout_width="match_parent"
+            android:layout_height="259px"
+            android:layout_below="@+id/toolBar"
+            android:layout_marginTop="70px">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="259px">
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/imageCard"
+                    android:layout_width="200px"
+                    android:layout_height="200px"
+                    android:layout_marginLeft="25px"
+                    android:layout_marginTop="25px"
+                    android:layout_marginBottom="34px"
+                    app:cardCornerRadius="10px">
+
+
+                    <ImageView
+                        android:id="@+id/imageView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:srcCompat="@tools:sample/avatars" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/textView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="27px"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="25px"
+                    android:layout_toRightOf="@+id/imageCard"
+                    android:text="What’s your favorite Product? "
+                    android:textColor="@color/black"
+                    android:textFontWeight="600"
+                    android:textSize="18px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView2"
+                    android:layout_width="594px"
+                    android:layout_height="55px"
+                    android:layout_below="@id/textView"
+                    android:layout_marginLeft="13dp"
+                    android:layout_toRightOf="@+id/imageCard"
+                    android:text="This project will test the candidates’ product knowledge (both software and hardware) and their prioritization skills. There can be hundreds of product which a candidate may use. We are testing if the candidates are able to pick up minute & important details of the product they are currently using and its importance."
+                    android:textFontWeight="600"
+                    android:textSize="11px" />
+
+                <TextView
+                    android:id="@+id/textView3"
+                    android:layout_width="156px"
+                    android:layout_height="24px"
+                    android:layout_below="@id/textView2"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_toRightOf="@+id/imageCard"
+                    android:text="Learning Outcome"
+                    android:textColor="@color/black"
+                    android:textFontWeight="600"
+                    android:textSize="16px"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/textView4"
+                    android:layout_width="480px"
+                    android:layout_height="15px"
+                    android:layout_below="@id/textView3"
+                    android:layout_marginLeft="13dp"
+                    android:layout_toRightOf="@+id/imageCard"
+                    android:text="Prioritization skills, About Product knowledge, clear and concise understanding of product"
+                    android:textFontWeight="600"
+                    android:textSize="16px" />
+
+                <TextView
+                    android:id="@+id/textView5"
+                    android:layout_width="120px"
+                    android:layout_height="24px"
+                    android:layout_below="@id/textView4"
+                    android:layout_marginLeft="13dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_toRightOf="@+id/imageCard"
+                    android:text="Pre-requisites"
+                    android:textColor="@color/black"
+                    android:textFontWeight="600"
+                    android:textSize="16px"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/divider"
+                    android:layout_width="1dp"
+                    android:layout_height="200px"
+                    android:layout_marginLeft="19px"
+                    android:layout_toRightOf="@id/textView2"
+                    android:background="?android:attr/listDivider" />
+
+                <TextView
+                    android:id="@+id/textView6"
+                    android:layout_width="103px"
+                    android:layout_height="24px"
+                    android:layout_marginLeft="43px"
+                    android:layout_marginTop="45px"
+                    android:layout_toRightOf="@+id/divider"
+                    android:text="Selection by"
+                    android:textColor="@color/black"
+                    android:textFontWeight="600"
+                    android:textSize="16px"
+                    android:textStyle="bold" />
+
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/imageCardView"
+                    android:layout_width="25px"
+                    android:layout_height="25px"
+
+                    android:layout_marginBottom="34px"
+                    app:cardCornerRadius="10px"
+
+                    android:layout_toRightOf="@+id/divider"
+                    android:layout_below="@id/textView6"
+                    android:layout_marginTop="8px"
+                    android:layout_marginLeft="43px">
+
+
+                    <ImageView
+                        android:id="@+id/imageCardView"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        tools:srcCompat="@tools:sample/avatars"
+                        tools:ignore="DuplicateIds" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/textView7"
+                    android:layout_width="45px"
+                    android:layout_height="21px"
+                    android:layout_below="@id/textView6"
+                    android:layout_marginLeft="3px"
+                    android:layout_marginTop="8px"
+                    android:layout_toRightOf="@+id/imageCardView"
+                    android:text="SURAJ"
+                    android:textColor="@color/black"
+                    android:textFontWeight="600"
+                    android:textSize="14px"
+                    android:textStyle="bold"
+                    />
+
+                <TextView
+                    android:id="@+id/textView8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textView7"
+                    android:layout_marginLeft="3px"
+                    android:layout_toRightOf="@+id/imageCardView"
+                    android:text="DEEPTHOUGHT"
+                    android:textColor="#2A7EFA"
+                    android:textFontWeight="600"
+                    android:textSize="11px" />
+
+                <TextView
+                    android:id="@+id/button"
+                    android:layout_width="81.08px"
+                    android:layout_height="35.64px"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentBottom="true"
+                    android:layout_marginRight="53.45px"
+                    android:layout_marginBottom="40px"
+                    android:background="#0029FF"
+                    android:hapticFeedbackEnabled="false"
+                    android:text="Explore"
+                    android:textColor="@color/white"
+                    android:textSize="14px"
+                    android:textAlignment="center"/>
+
+
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Card2"
+        android:layout_width="match_parent"
+        android:layout_height="259px"
+        android:layout_below="@+id/Card1"
+        android:layout_marginTop="70px">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="259px">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/imageCard2"
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:layout_marginLeft="25px"
+                android:layout_marginTop="25px"
+                android:layout_marginBottom="34px"
+                app:cardCornerRadius="10px">
+
+
+                <ImageView
+                    android:id="@+id/imageView22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:srcCompat="@tools:sample/avatars" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textView2_2"
+                android:layout_width="wrap_content"
+                android:layout_height="27px"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="25px"
+                android:layout_toRightOf="@+id/imageCard2"
+                android:text="What’s your favorite Product? "
+                android:textColor="@color/black"
+                android:textFontWeight="600"
+                android:textSize="18px"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="594px"
+                android:layout_height="55px"
+                android:layout_below="@id/textView2_2"
+                android:layout_marginLeft="13dp"
+                android:layout_toRightOf="@+id/imageCard2"
+                android:text="This project will test the candidates’ product knowledge (both software and hardware) and their prioritization skills. There can be hundreds of product which a candidate may use. We are testing if the candidates are able to pick up minute & important details of the product they are currently using and its importance."
+                android:textFontWeight="600"
+                android:textSize="11px" />
+
+            <TextView
+                android:id="@+id/textView32"
+                android:layout_width="156px"
+                android:layout_height="24px"
+                android:layout_below="@id/textView22"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/imageCard2"
+                android:text="Learning Outcome"
+                android:textColor="@color/black"
+                android:textFontWeight="600"
+                android:textSize="16px"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView42"
+                android:layout_width="480px"
+                android:layout_height="15px"
+                android:layout_below="@id/textView32"
+                android:layout_marginLeft="13dp"
+                android:layout_toRightOf="@+id/imageCard2"
+                android:text="Prioritization skills, About Product knowledge, clear and concise understanding of product"
+                android:textFontWeight="600"
+                android:textSize="16px" />
+
+            <TextView
+                android:id="@+id/textView52"
+                android:layout_width="120px"
+                android:layout_height="24px"
+                android:layout_below="@id/textView42"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/imageCard2"
+                android:text="Pre-requisites"
+                android:textColor="@color/black"
+                android:textFontWeight="600"
+                android:textSize="16px"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/divider2"
+                android:layout_width="1dp"
+                android:layout_height="200px"
+                android:layout_marginLeft="19px"
+                android:layout_toRightOf="@id/textView22"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/textView62"
+                android:layout_width="103px"
+                android:layout_height="24px"
+                android:layout_marginLeft="43px"
+                android:layout_marginTop="45px"
+                android:layout_toRightOf="@+id/divider2"
+                android:text="Selection by"
+                android:textColor="@color/black"
+                android:textFontWeight="600"
+                android:textSize="16px"
+                android:textStyle="bold" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/imageCardView2"
+                android:layout_width="25px"
+                android:layout_height="25px"
+
+                android:layout_marginBottom="34px"
+                app:cardCornerRadius="10px"
+
+                android:layout_toRightOf="@+id/divider2"
+                android:layout_below="@id/textView62"
+                android:layout_marginTop="8px"
+                android:layout_marginLeft="43px">
+
+
+                <ImageView
+                    android:id="@+id/imageCardView2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:srcCompat="@tools:sample/avatars"
+                    tools:ignore="DuplicateIds" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textView72"
+                android:layout_width="45px"
+                android:layout_height="21px"
+                android:layout_below="@id/textView62"
+                android:layout_marginLeft="3px"
+                android:layout_marginTop="8px"
+                android:layout_toRightOf="@+id/imageCardView2"
+                android:text="SURAJ"
+                android:textColor="@color/black"
+                android:textFontWeight="600"
+                android:textSize="14px"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView82"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView72"
+                android:layout_marginLeft="3px"
+                android:layout_toEndOf="@+id/imageCardView2"
+                android:text="DEEPTHOUGHT"
+                android:textColor="#2A7EFA"
+                android:textFontWeight="600"
+                android:textSize="11px"
+                tools:ignore="NotSibling" />
+
+            <TextView
+                android:id="@+id/button2"
+                android:layout_width="81.08px"
+                android:layout_height="35.64px"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="53.45px"
+                android:layout_marginBottom="40px"
+                android:background="#0029FF"
+                android:hapticFeedbackEnabled="false"
+                android:text="Explore"
+                android:textColor="@color/white"
+                android:textSize="14px"
+                android:textAlignment="center"/>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Card3"
+        android:layout_width="match_parent"
+        android:layout_height="259px"
+        android:layout_below="@+id/Card2"
+        android:layout_marginTop="70px">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="259px">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/imageCard2_3"
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:layout_marginLeft="25px"
+                android:layout_marginTop="25px"
+                android:layout_marginBottom="34px"
+                app:cardCornerRadius="10px">
+
+
+                <ImageView
+                    android:id="@+id/imageView22_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:srcCompat="@tools:sample/avatars" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textView2_2_3"
+                android:layout_width="wrap_content"
+                android:layout_height="27px"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="25px"
+                android:layout_toRightOf="@+id/imageCard2_3"
+                android:text="What’s your favorite Product? "
+                android:textColor="@color/black"
+                android:textFontWeight="600"
+                android:textSize="18px"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView22_3"
+                android:layout_width="594px"
+                android:layout_height="55px"
+                android:layout_below="@id/textView2_2_3"
+                android:layout_marginLeft="13dp"
+                android:layout_toRightOf="@+id/imageCard2_3"
+                android:text="This project will test the candidates’ product knowledge (both software and hardware) and their prioritization skills. There can be hundreds of product which a candidate may use. We are testing if the candidates are able to pick up minute & important details of the product they are currently using and its importance."
+                android:textFontWeight="600"
+                android:textSize="11px" />
+
+            <TextView
+                android:id="@+id/textView32_3"
+                android:layout_width="156px"
+                android:layout_height="24px"
+                android:layout_below="@id/textView22_3"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/imageCard2_3"
+                android:text="Learning Outcome"
+                android:textColor="@color/black"
+                android:textFontWeight="600"
+                android:textSize="16px"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView42_3"
+                android:layout_width="480px"
+                android:layout_height="15px"
+                android:layout_below="@id/textView32_3"
+                android:layout_marginLeft="13dp"
+                android:layout_toRightOf="@+id/imageCard2_3"
+                android:text="Prioritization skills, About Product knowledge, clear and concise understanding of product"
+                android:textFontWeight="600"
+                android:textSize="16px" />
+
+            <TextView
+                android:id="@+id/textView52_3"
+                android:layout_width="120px"
+                android:layout_height="24px"
+                android:layout_below="@id/textView42_3"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/imageCard2_3"
+                android:text="Pre-requisites"
+                android:textColor="@color/black"
+                android:textFontWeight="600"
+                android:textSize="16px"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/divider2_3"
+                android:layout_width="1dp"
+                android:layout_height="200px"
+                android:layout_marginLeft="19px"
+                android:layout_toRightOf="@id/textView22_3"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/textView62_3"
+                android:layout_width="103px"
+                android:layout_height="24px"
+                android:layout_marginLeft="43px"
+                android:layout_marginTop="45px"
+                android:layout_toRightOf="@+id/divider2_3"
+                android:text="Selection by"
+                android:textColor="@color/black"
+                android:textFontWeight="600"
+                android:textSize="16px"
+                android:textStyle="bold" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/imageCardView2_3"
+                android:layout_width="25px"
+                android:layout_height="25px"
+
+                android:layout_marginBottom="34px"
+                app:cardCornerRadius="10px"
+
+                android:layout_toRightOf="@+id/divider2_3"
+                android:layout_below="@id/textView62_3"
+                android:layout_marginTop="8px"
+                android:layout_marginLeft="43px">
+
+
+                <ImageView
+                    android:id="@+id/imageCardView2_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:srcCompat="@tools:sample/avatars"
+                    tools:ignore="DuplicateIds" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textView72_3"
+                android:layout_width="45px"
+                android:layout_height="21px"
+                android:layout_below="@id/textView62_3"
+                android:layout_marginLeft="3px"
+                android:layout_marginTop="8px"
+                android:layout_toRightOf="@+id/imageCardView2_3"
+                android:text="SURAJ"
+                android:textColor="@color/black"
+                android:textFontWeight="600"
+                android:textSize="14px"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView82_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView72_3"
+                android:layout_marginLeft="3px"
+                android:layout_toEndOf="@+id/imageCardView2_3"
+                android:text="DEEPTHOUGHT"
+                android:textColor="#2A7EFA"
+                android:textFontWeight="600"
+                android:textSize="11px"
+                tools:ignore="NotSibling" />
+
+            <TextView
+                android:id="@+id/button2_3"
+                android:layout_width="81.08px"
+                android:layout_height="35.64px"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="53.45px"
+                android:layout_marginBottom="40px"
+                android:background="#0029FF"
+                android:hapticFeedbackEnabled="false"
+                android:text="Explore"
+                android:textColor="@color/white"
+                android:textSize="14px"
+                android:textAlignment="center"/>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/Card4"
+        android:layout_width="match_parent"
+        android:layout_height="259px"
+        android:layout_below="@+id/Card3"
+        android:layout_marginTop="70px">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="259px">
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/imageCard2_4"
+                android:layout_width="200px"
+                android:layout_height="200px"
+                android:layout_marginLeft="25px"
+                android:layout_marginTop="25px"
+                android:layout_marginBottom="34px"
+                app:cardCornerRadius="10px">
+
+
+                <ImageView
+                    android:id="@+id/imageView22_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:srcCompat="@tools:sample/avatars" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textView2_2_4"
+                android:layout_width="wrap_content"
+                android:layout_height="27px"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="25px"
+                android:layout_toRightOf="@+id/imageCard2_4"
+                android:text="What’s your favorite Product? "
+                android:textColor="@color/black"
+                android:textFontWeight="600"
+                android:textSize="18px"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView22_4"
+                android:layout_width="594px"
+                android:layout_height="55px"
+                android:layout_below="@id/textView2_2_4"
+                android:layout_marginLeft="13dp"
+                android:layout_toRightOf="@+id/imageCard2_4"
+                android:text="This project will test the candidates’ product knowledge (both software and hardware) and their prioritization skills. There can be hundreds of product which a candidate may use. We are testing if the candidates are able to pick up minute & important details of the product they are currently using and its importance."
+                android:textFontWeight="600"
+                android:textSize="11px" />
+
+            <TextView
+                android:id="@+id/textView32_4"
+                android:layout_width="156px"
+                android:layout_height="24px"
+                android:layout_below="@id/textView22_4"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="8dp"
+                android:layout_toRightOf="@+id/imageCard2_4"
+                android:text="Learning Outcome"
+                android:textColor="@color/black"
+                android:textFontWeight="600"
+                android:textSize="16px"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView42_4"
+                android:layout_width="480px"
+                android:layout_height="15px"
+                android:layout_below="@id/textView32_4"
+                android:layout_marginLeft="13dp"
+                android:layout_toRightOf="@+id/imageCard2_4"
+                android:text="Prioritization skills, About Product knowledge, clear and concise understanding of product"
+                android:textFontWeight="600"
+                android:textSize="16px" />
+
+            <TextView
+                android:id="@+id/textView52_4"
+                android:layout_width="120px"
+                android:layout_height="24px"
+                android:layout_below="@id/textView42_4"
+                android:layout_marginLeft="13dp"
+                android:layout_marginTop="15dp"
+                android:layout_toRightOf="@+id/imageCard2_4"
+                android:text="Pre-requisites"
+                android:textColor="@color/black"
+                android:textFontWeight="600"
+                android:textSize="16px"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/divider2_4"
+                android:layout_width="1dp"
+                android:layout_height="200px"
+                android:layout_marginLeft="19px"
+                android:layout_toRightOf="@id/textView22_4"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+                android:id="@+id/textView62_4"
+                android:layout_width="103px"
+                android:layout_height="24px"
+                android:layout_marginLeft="43px"
+                android:layout_marginTop="45px"
+                android:layout_toRightOf="@+id/divider2_4"
+                android:text="Selection by"
+                android:textColor="@color/black"
+                android:textFontWeight="600"
+                android:textSize="16px"
+                android:textStyle="bold" />
+
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/imageCardView2_4"
+                android:layout_width="25px"
+                android:layout_height="25px"
+
+                android:layout_marginBottom="34px"
+                app:cardCornerRadius="10px"
+
+                android:layout_toRightOf="@+id/divider2_4"
+                android:layout_below="@id/textView62_4"
+                android:layout_marginTop="8px"
+                android:layout_marginLeft="43px">
+
+
+                <ImageView
+                    android:id="@+id/imageCardView2_4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    tools:srcCompat="@tools:sample/avatars"
+                    tools:ignore="DuplicateIds" />
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/textView72_4"
+                android:layout_width="45px"
+                android:layout_height="21px"
+                android:layout_below="@id/textView62_4"
+                android:layout_marginLeft="3px"
+                android:layout_marginTop="8px"
+                android:layout_toRightOf="@+id/imageCardView2_4"
+                android:text="SURAJ"
+                android:textColor="@color/black"
+                android:textFontWeight="600"
+                android:textSize="14px"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/textView82_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textView72_4"
+                android:layout_marginLeft="3px"
+                android:layout_toEndOf="@+id/imageCardView2_4"
+                android:text="DEEPTHOUGHT"
+                android:textColor="#2A7EFA"
+                android:textFontWeight="600"
+                android:textSize="11px"
+                tools:ignore="NotSibling" />
+
+            <TextView
+                android:id="@+id/button2_4"
+                android:layout_width="81.08px"
+                android:layout_height="35.64px"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginRight="53.45px"
+                android:layout_marginBottom="40px"
+                android:background="#0029FF"
+                android:hapticFeedbackEnabled="false"
+                android:text="Explore"
+                android:textColor="@color/white"
+                android:textSize="14px"
+                android:textAlignment="center"/>
+
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>
